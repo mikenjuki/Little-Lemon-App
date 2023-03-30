@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;800&family=Markazi+Text:wght@400;500&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .btn {
+    @apply px-5 py-4 rounded-xl focus:outline-none focus:ring focus:ring-offset-2 uppercase font-semibold text-sm sm:text-base;
+  }
+  .btn-primary {
+    @apply bg-LemonYellow hover:bg-LemonGreen hover:text-white focus:ring-yellow-300 focus:ring-opacity-50 active:bg-LemonYellow;
+  }
+  .btn-secondary {
+    @apply;
+  }
+}
+
+.bg-primary {
+  background-color: #f1f5f4;
+}
