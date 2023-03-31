@@ -6,6 +6,9 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const resolvedPath = useResolvedPath();
+  // const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
   return (
     <nav className="flex w-full justify-between items-center py-6">
       <Link to="/" className="logo">
@@ -13,12 +16,16 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop */}
+
       <ul className=" list-none flex-1 hidden justify-end items-center sm:flex">
         {navLinks.map((nav, index) => {
           return (
             <li
               key={nav.id}
-              className={`font-Karla font-normal cursor-pointer text-[1rem]
+              className={`
+              ${
+                resolvedPath.pathname === nav.linkRoute ? "active-link" : ""
+              } hover-underline-animation font-Karla font-normal cursor-pointer text-[1rem]
             ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}
              text-black`}
             >
@@ -58,29 +65,15 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
-
-    // <nav className="nav">
-    //   <Link to="/" className="logo">
-    //     Logo
-    //   </Link>
-    //   <ul>
-    //     <CustomLink to="/">Home</CustomLink>
-    //     <CustomLink to="/about">About Us</CustomLink>
-    //     <CustomLink to="/menu">Menu</CustomLink>
-    //     <CustomLink to="/reservations">Reservations</CustomLink>
-    //     <CustomLink to="/order-online">Order Online</CustomLink>
-    //     <CustomLink to="/login">Login</CustomLink>
-    //   </ul>
-    // </nav>
   );
 };
 
 // function CustomLink({ to, children, ...props }) {
-//   const resolvedPath = useResolvedPath(to);
-//   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+// const resolvedPath = useResolvedPath(to);
+// const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
 //   return (
-//     <li className={isActive ? "active" : ""}>
+//     <li className={isActive ? "hover-underline-animation" : ""}>
 //       <Link to={to} {...props}>
 //         {children}
 //       </Link>

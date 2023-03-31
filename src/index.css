@@ -25,10 +25,9 @@
     144.39deg,
     #ffffff -278.56%,
     #c3f2bb -78.47%,
-    #495E57 91.61%
+    #495e57 91.61%
   );
 }
-
 
 .sidebar {
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -55,4 +54,31 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+.active-link {
+  border-bottom: 2px solid #495E57;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #495E57;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
