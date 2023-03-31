@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link, useResolvedPath } from "react-router-dom";
 import { logo, open, close } from "../assets";
 import { navLinks } from "../constants";
 import { useState } from "react";
@@ -7,7 +7,6 @@ import { useState } from "react";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const resolvedPath = useResolvedPath();
-  // const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
   return (
     <nav className="flex w-full justify-between items-center py-6">
@@ -67,18 +66,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
-// function CustomLink({ to, children, ...props }) {
-// const resolvedPath = useResolvedPath(to);
-// const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-//   return (
-//     <li className={isActive ? "hover-underline-animation" : ""}>
-//       <Link to={to} {...props}>
-//         {children}
-//       </Link>
-//     </li>
-//   );
-// }
 
 export default Navbar;

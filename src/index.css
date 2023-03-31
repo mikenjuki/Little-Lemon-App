@@ -16,6 +16,21 @@
   }
 }
 
+.btn-p-color {
+  background-image: linear-gradient(
+    to right,
+    #f4ce14 0%,
+    #ee9972 51%,
+    #f4ce14 100%
+  );
+  background-size: 200% auto;
+  transition: background-position 0.5s ease-out;
+}
+
+.btn-p-color:hover {
+  background-position: right center;
+}
+
 .bg-primary {
   background-color: #ffffff;
 }
@@ -57,7 +72,7 @@
 }
 
 .active-link {
-  border-bottom: 2px solid #495E57;
+  border-bottom: 2px solid #495e57;
 }
 
 .hover-underline-animation {
@@ -73,7 +88,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #495E57;
+  background-color: #495e57;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
