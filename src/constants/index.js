@@ -52,7 +52,7 @@ export const specialMeals = [
     title: "Greek Salad",
     price: 12.99,
     content:
-      "The famous Greek Salad of crispy lettuce, peppers, olives and our Chicago style feta cheese garnished with crunchy garlic and rosemary croutons.",
+      "Made with crispy lettuce, peppers, olives and our Chicago style feta cheese garnished with crunchy garlic and rosemary croutons.",
     orderTag: "Order a delivery",
     icon: deliveryBike,
   },
