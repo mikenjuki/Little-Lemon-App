@@ -16,26 +16,32 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
+    linkRoute: "/",
   },
   {
     id: "about",
     title: "About Us",
+    linkRoute: "/about",
   },
   {
     id: "menu",
     title: "Menu",
+    linkRoute: "/menu",
   },
   {
     id: "reservations",
     title: "Reservations",
+    linkRoute: "/reservations",
   },
   {
     id: "order online",
     title: "Order Online",
+    linkRoute: "/order-online",
   },
   {
     id: "login",
     title: "Login",
+    linkRoute: "/login",
   },
 ];
 
