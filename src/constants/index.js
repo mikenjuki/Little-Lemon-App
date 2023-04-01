@@ -2,6 +2,7 @@ import {
   people01,
   people02,
   people03,
+  people04,
   bruchetta,
   lemonDessert,
   greekSalad,
@@ -89,16 +90,23 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "The food at Little Lemon is amazing. It's not just about the money, it's about the quality and the experience. You can feel the passion and the care that goes into every dish. Little Lemon is a place where you can enjoy yourself and your company.",
+      "The food at Little Lemon is amazing. It's not just about the money, it's about the quality and the experience. You can feel the passion and the care that goes into every dish. I'd definitely recommend it to anyone.",
     name: "Jessica Yu",
     img: people01,
   },
   {
     id: "feedback-3",
     content:
-      "If you're looking for a great meal, look no further than Little Lemon. The food is mouthwatering, the service is impeccable and the atmosphere is cozy. Little Lemon is a tool for happiness. It will take you where you want to go, but you have to be the driver.",
+      "If you're looking for a great meal, look no further than Little Lemon. The food is mouthwatering, the service is impeccable and the atmosphere is cozy. I loved the experience.",
     name: "Tristan Grey",
     img: people03,
+  },
+  {
+    id: "feedback-4",
+    content:
+      "I had a great experience at Little Lemon. The food was delicious and the staff was friendly. I would definitely recommend it to anyone looking for a great meal. Oh and did I mention the ambience, it's to die for.",
+    name: "Alice Price",
+    img: people04,
   },
 ];
 

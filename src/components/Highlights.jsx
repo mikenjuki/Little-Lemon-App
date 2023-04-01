@@ -1,5 +1,5 @@
 import React from "react";
-import styles, { layout } from "../styles";
+import styles from "../styles";
 import Button from "./Button";
 import { specialMeals } from "../constants";
 import SpecialMealCard from "./SpecialMealCard";
